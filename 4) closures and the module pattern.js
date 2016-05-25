@@ -7,6 +7,16 @@
  */
 
 /*
+ Module Pattern - This pattern gives control over privacy of methods.
+ In order to do this the pattern uses function closure. You would use this if you don’t want users to change
+ the variable in the code. This is widely used to make reusable code.
+
+ Function Closure  - In JS all variables are globally available unless declared in a function.
+ Every function created no matter how deep incrusted in other functions has access to variables that are closer
+ to the global scope.
+ */
+
+/*
  Closures are a construct of the JavaScript language.
  Within JavaScript all variables are accessible from the global scope except variables
  that are declared within a function using the var keyword.
@@ -67,7 +77,6 @@ var Module = (function() {
 }());
 
 //That’s essentially the module pattern right there.^
-
 
 
 
