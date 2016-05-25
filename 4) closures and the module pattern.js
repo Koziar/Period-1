@@ -64,9 +64,10 @@ console.log(innervar); // => Reference Error
  we can expose whatever we wish to the outside world, so we can have both public and private methods.
  */
 
+//Module Pattern --------------------------------------------------------------
 var Module = (function() {
     // Following function is private, but can be accessed by the public functions
-    function privateFunc() { /*...*/ };
+    function privateFunc() { "Welcome to my private function" };
 
     // Return an object that is assigned to Module
     return {
@@ -75,6 +76,8 @@ var Module = (function() {
         }
     };
 }());
+
+Module.publicFunc();
 
 //That’s essentially the module pattern right there.^
 
