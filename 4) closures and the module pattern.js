@@ -80,6 +80,19 @@ var Module = (function() {
 Module.publicFunc();
 
 //That’s essentially the module pattern right there.^
+///////////////
+// what is a closure?
+
+function foo(x){
+    var count = x;
+
+    function bar(y){
+        console.log(count + y);
+    }
+    bar(4); // will log 4 + x to the console;
+}
+
+foo(2); // logs 6 to the console
 
 
 
